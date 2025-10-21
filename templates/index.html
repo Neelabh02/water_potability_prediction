@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Water Potability Prediction</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>💧 Water Potability Predictor</h1>
+    <form action="/predict" method="post">
+      <input type="number" step="any" name="ph" placeholder="pH value (e.g. 7.0)" required>
+      <input type="number" step="any" name="Hardness" placeholder="Hardness (e.g. 150)" required>
+      <input type="number" step="any" name="Solids" placeholder="Solids (e.g. 20000)" required>
+      <input type="number" step="any" name="Chloramines" placeholder="Chloramines (e.g. 7.5)" required>
+      <input type="number" step="any" name="Sulfate" placeholder="Sulfate (e.g. 320)" required>
+      <input type="number" step="any" name="Conductivity" placeholder="Conductivity (e.g. 450)" required>
+      <input type="number" step="any" name="Organic_carbon" placeholder="Organic Carbon (e.g. 14)" required>
+      <input type="number" step="any" name="Trihalomethanes" placeholder="Trihalomethanes (e.g. 65)" required>
+      <input type="number" step="any" name="Turbidity" placeholder="Turbidity (e.g. 3.5)" required>
+      <button type="submit">Predict</button>
+    </form>
+    <h2>{{ prediction_text }}</h2>
+  </div>
+</body>
+</html>
