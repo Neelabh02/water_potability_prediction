@@ -1,1 +1,1 @@
-https://water-potability-prediction-b5nb.onrender.com
+https://water-potability-prediction-b5nb.onrender.com/predict
