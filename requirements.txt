@@ -6,3 +6,5 @@ numpy
 seaborn
 matplotlib
 plotly
+xgboost
+imbalanced-learn
